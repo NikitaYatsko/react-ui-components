@@ -57,7 +57,15 @@ function App() {
                     temporibus ullam vel voluptatem voluptatibus voluptatum! Consequatur dolorem eveniet illo optio
                     porro quod reiciendis, rerum tenetur. Magnam provident reiciendis rerum ullam?</p>
             </main>
-            <Modal active={modalActive} setActive={setModalActive}/>
+            <Modal active={modalActive} setActive={setModalActive}>
+                <h3>Это модальное окно</h3>
+                <hr/>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci commodi, corporis dolorem ex
+                    expedita fugiat hic, illum maiores necessitatibus nulla perspiciatis praesentium ratione
+                    reprehenderit sequi sit suscipit vitae voluptate voluptatibus. Aliquid asperiores consequatur cum
+                    cumque delectus deserunt fugit ipsum labore natus, nisi officia officiis, saepe similique sint
+                    soluta, velit veniam?</p>
+            </Modal>
         </div>
     )
 }
