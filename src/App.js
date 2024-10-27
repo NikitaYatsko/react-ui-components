@@ -1,25 +1,65 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Modal from "./components/Modal/Modal";
+import {useState} from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [modalActive, setModalActive] = useState(false)
+    if (modalActive) {
+        document.body.style.overflowY = 'hidden'
+    } else {
+        document.body.style.overflowY = 'scroll'
+    }
+    return (
+        <div className='app'>
+            <main>
+                <button className='open-modal_btn' onClick={() => {
+                    setModalActive(true)
+                }}>Открыть модальное окно
+                </button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolores nisi reprehenderit?
+                    Distinctio eius explicabo ipsam libero, nostrum quos? A alias aliquam commodi culpa cum deleniti,
+                    dignissimos est et exercitationem fuga illum iste iure laborum libero nemo nesciunt nisi non odio
+                    officiis optio porro possimus provident quaerat quam quia quisquam sint, temporibus tenetur unde
+                    veritatis? Amet, asperiores cumque dicta dolores error eveniet, fugit illum magnam maiores molestias
+                    mollitia officiis omnis perferendis perspiciatis placeat quaerat qui quibusdam quod rerum, soluta
+                    temporibus ullam vel voluptatem voluptatibus voluptatum! Consequatur dolorem eveniet illo optio
+                    porro quod reiciendis, rerum tenetur. Magnam provident reiciendis rerum ullam?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolores nisi reprehenderit?
+                    Distinctio eius explicabo ipsam libero, nostrum quos? A alias aliquam commodi culpa cum deleniti,
+                    dignissimos est et exercitationem fuga illum iste iure laborum libero nemo nesciunt nisi non odio
+                    officiis optio porro possimus provident quaerat quam quia quisquam sint, temporibus tenetur unde
+                    veritatis? Amet, asperiores cumque dicta dolores error eveniet, fugit illum magnam maiores molestias
+                    mollitia officiis omnis perferendis perspiciatis placeat quaerat qui quibusdam quod rerum, soluta
+                    temporibus ullam vel voluptatem voluptatibus voluptatum! Consequatur dolorem eveniet illo optio
+                    porro quod reiciendis, rerum tenetur. Magnam provident reiciendis rerum ullam?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolores nisi reprehenderit?
+                    Distinctio eius explicabo ipsam libero, nostrum quos? A alias aliquam commodi culpa cum deleniti,
+                    dignissimos est et exercitationem fuga illum iste iure laborum libero nemo nesciunt nisi non odio
+                    officiis optio porro possimus provident quaerat quam quia quisquam sint, temporibus tenetur unde
+                    veritatis? Amet, asperiores cumque dicta dolores error eveniet, fugit illum magnam maiores molestias
+                    mollitia officiis omnis perferendis perspiciatis placeat quaerat qui quibusdam quod rerum, soluta
+                    temporibus ullam vel voluptatem voluptatibus voluptatum! Consequatur dolorem eveniet illo optio
+                    porro quod reiciendis, rerum tenetur. Magnam provident reiciendis rerum ullam?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolores nisi reprehenderit?
+                    Distinctio eius explicabo ipsam libero, nostrum quos? A alias aliquam commodi culpa cum deleniti,
+                    dignissimos est et exercitationem fuga illum iste iure laborum libero nemo nesciunt nisi non odio
+                    officiis optio porro possimus provident quaerat quam quia quisquam sint, temporibus tenetur unde
+                    veritatis? Amet, asperiores cumque dicta dolores error eveniet, fugit illum magnam maiores molestias
+                    mollitia officiis omnis perferendis perspiciatis placeat quaerat qui quibusdam quod rerum, soluta
+                    temporibus ullam vel voluptatem voluptatibus voluptatum! Consequatur dolorem eveniet illo optio
+                    porro quod reiciendis, rerum tenetur. Magnam provident reiciendis rerum ullam?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolores nisi reprehenderit?
+                    Distinctio eius explicabo ipsam libero, nostrum quos? A alias aliquam commodi culpa cum deleniti,
+                    dignissimos est et exercitationem fuga illum iste iure laborum libero nemo nesciunt nisi non odio
+                    officiis optio porro possimus provident quaerat quam quia quisquam sint, temporibus tenetur unde
+                    veritatis? Amet, asperiores cumque dicta dolores error eveniet, fugit illum magnam maiores molestias
+                    mollitia officiis omnis perferendis perspiciatis placeat quaerat qui quibusdam quod rerum, soluta
+                    temporibus ullam vel voluptatem voluptatibus voluptatum! Consequatur dolorem eveniet illo optio
+                    porro quod reiciendis, rerum tenetur. Magnam provident reiciendis rerum ullam?</p>
+            </main>
+            <Modal active={modalActive} setActive={setModalActive}/>
+        </div>
+    )
 }
 
 export default App;
