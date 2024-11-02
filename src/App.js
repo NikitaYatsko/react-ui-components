@@ -1,14 +1,12 @@
 import './App.css'
 import Modal from "./components/Modal/Modal";
 import {useState} from "react";
+import Counter from "./components/Counter/Counter";
 
 function App() {
     const [modalActive, setModalActive] = useState(false)
-    if (modalActive) {
-        document.body.style.overflowY = 'hidden'
-    } else {
-        document.body.style.overflowY = 'scroll'
-    }
+    const [count, setCount] = useState(0);
+
     return (
         <div className='app'>
             <main>
@@ -66,6 +64,9 @@ function App() {
                     cumque delectus deserunt fugit ipsum labore natus, nisi officia officiis, saepe similique sint
                     soluta, velit veniam?</p>
             </Modal>
+            <hr/>
+            <Counter count={count} setCount={setCount}/>
+
         </div>
     )
 }

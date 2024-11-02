@@ -1,0 +1,36 @@
+.counter-wrapper {
+    padding: 20px 20px;
+    width: 120px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.to-display-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.increment, .decrement {
+    cursor: pointer;
+
+    width: 50px;
+    background: transparent;
+    border: 1px solid black;
+
+}
+
+.reset {
+    cursor: pointer;
+    width: 50px;
+    margin-left: 10px;
+    background: transparent;
+    border: 1px solid black;
+
+}
+
+.current-count {
+    margin-left: 12px;
+    font-size: 24px;
+    margin-top: 10px;
+}
