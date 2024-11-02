@@ -1,0 +1,24 @@
+.tabs{
+    width: 500px;
+    margin: 0 auto;
+}
+.tabheader-items {
+    border: 1px solid black;
+    display: flex;
+}
+
+.tabheader-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tabheader-item_active {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.tabcontent {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}

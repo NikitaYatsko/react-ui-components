@@ -2,6 +2,7 @@ import './App.css'
 import Modal from "./components/Modal/Modal";
 import {useState} from "react";
 import Counter from "./components/Counter/Counter";
+import Tabs from "./components/Tabs/Tabs";
 
 function App() {
     const [modalActive, setModalActive] = useState(false)
@@ -15,6 +16,7 @@ function App() {
     return (
         <div className='app'>
             <main>
+                <h3 className='to-center'>Модальное Окно</h3>
                 <button className='open-modal_btn' onClick={() => {
                     setModalActive(true)
                 }}>Открыть модальное окно
@@ -70,7 +72,9 @@ function App() {
                     soluta, velit veniam?</p>
             </Modal>
             <hr/>
+            <h3 className='to-center'>Cчетчик</h3>
             <Counter count={count} setCount={setCount}/>
+            <Tabs/>
 
 
         </div>

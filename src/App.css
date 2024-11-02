@@ -1,8 +1,13 @@
-.open-modal_btn{
-    cursor:pointer;
+.open-modal_btn {
+    cursor: pointer;
     width: 200px;
     height: 40px;
 }
+
 p {
     font-size: 20px;
+}
+
+.to-center {
+    text-align: center;
 }
