@@ -6,6 +6,11 @@ import Counter from "./components/Counter/Counter";
 function App() {
     const [modalActive, setModalActive] = useState(false)
     const [count, setCount] = useState(0);
+    if (modalActive) {
+        document.body.style.overflowY = 'hidden';
+    } else {
+        document.body.style.overflowY = 'scroll';
+    }
 
     return (
         <div className='app'>
@@ -66,6 +71,7 @@ function App() {
             </Modal>
             <hr/>
             <Counter count={count} setCount={setCount}/>
+
 
         </div>
     )
