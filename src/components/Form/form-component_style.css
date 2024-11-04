@@ -1,0 +1,50 @@
+form {
+    margin: 20px auto 0;
+    padding: 20px 20px;
+    border: 1px solid black;
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.reg-button {
+    border: 1px solid black;
+    cursor: pointer;
+    display: block;
+    background: black;
+    color: white;
+    padding: 20px 20px;
+    width: 300px;
+    margin: 20px auto 0;
+    font-size: 18px;
+    transition: .3s;
+    border-radius: 40px;
+
+}
+
+.reg-button:hover {
+    background: white;
+    color: black;
+    border-radius: 0;
+
+}
+
+.pass-input, .e-input {
+    outline: none;
+    display: block;
+    margin: 0 auto;
+    padding-left: 10px;
+    width: 300px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+.e-input {
+    margin-top: 20px;
+}
+
+.pass-input {
+    margin-top: 20px;
+}
