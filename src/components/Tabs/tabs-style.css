@@ -1,24 +1,38 @@
-.tabs{
+.tabs {
     width: 500px;
     margin: 0 auto;
 }
+
 .tabheader-items {
     border: 1px solid black;
     display: flex;
 }
 
 .tabheader-item {
+    color: black;
     padding: 10px;
     cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .tabheader-item_active {
-    font-weight: bold;
-    color: #007BFF;
+    background-color: aqua;
+    color: white;
 }
 
+.tabheader-item:hover {
+    background-color: rgba(0, 255, 255, 0.5);
+    color: white;
+}
+
+
 .tabcontent {
+
     margin-top: 20px;
     padding: 10px;
     border: 1px solid #ddd;
+
 }
+
+
+

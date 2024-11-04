@@ -3,6 +3,7 @@ import Modal from "./components/Modal/Modal";
 import {useState} from "react";
 import Counter from "./components/Counter/Counter";
 import Tabs from "./components/Tabs/Tabs";
+import Tabitem from "./components/Tabs/TabItem/Tabitem";
 
 function App() {
     const [modalActive, setModalActive] = useState(false)
@@ -74,7 +75,25 @@ function App() {
             <hr/>
             <h3 className='to-center'>Cчетчик</h3>
             <Counter count={count} setCount={setCount}/>
-            <Tabs/>
+            <Tabs>
+                <Tabitem label="Tab 1">
+                    <h2>Content for Tab 1</h2>
+                    <p>This is some detailed content for the first tab.</p>
+                </Tabitem>
+                <Tabitem label="Tab 2">
+                    <h2>Content for Tab 2</h2>
+                    <p>Here is the content for the second tab.</p>
+                </Tabitem>
+                <Tabitem label="Tab 3">
+                    <h2>Content for Tab 3</h2>
+                    <p>This is the content for the third tab.</p>
+                </Tabitem>
+                <Tabitem label="Tab 4">
+                    <h2>Content for Tab 4</h2>
+                    <p>Fourth tab content goes here.</p>
+                </Tabitem>
+            </Tabs>
+
 
 
         </div>
