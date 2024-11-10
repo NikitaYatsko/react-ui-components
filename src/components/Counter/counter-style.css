@@ -13,7 +13,6 @@
 
 .increment, .decrement {
     cursor: pointer;
-
     width: 50px;
     background: transparent;
     border: 1px solid black;

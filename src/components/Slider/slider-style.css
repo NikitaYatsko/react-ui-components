@@ -32,6 +32,10 @@
     border: none;
     padding: 20px;
     cursor: pointer;
+    transition: 0.2s;
+}
+.slider-button:hover{
+   border-radius: 0;
 }
 
 .prev {
