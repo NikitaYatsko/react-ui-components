@@ -5,6 +5,7 @@ import Counter from "./components/Counter/Counter";
 import Tabs from "./components/Tabs/Tabs";
 import Tabitem from "./components/Tabs/TabItem/Tabitem";
 import FormComponent from "./components/Form/FormComponent";
+import Slider from "./components/Slider/Slider";
 
 function App() {
     const [modalActive, setModalActive] = useState(false)
@@ -95,6 +96,7 @@ function App() {
                 </Tabitem>
             </Tabs>
             <FormComponent/>
+            <Slider/>
 
 
         </div>
