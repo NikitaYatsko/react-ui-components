@@ -6,19 +6,17 @@ import Tabs from "./components/Tabs/Tabs";
 import Tabitem from "./components/Tabs/TabItem/Tabitem";
 import FormComponent from "./components/Form/FormComponent";
 import Slider from "./components/Slider/Slider";
+import UpButton from "./components/Counter/UpButton/UpButton";
 
 function App() {
     const [modalActive, setModalActive] = useState(false)
     const [count, setCount] = useState(0);
-    if (modalActive) {
-        document.body.style.overflowY = 'hidden';
-    } else {
-        document.body.style.overflowY = 'scroll';
-    }
+    const [isVisible,setIsVisible] = useState(false);
 
     return (
         <div className='app'>
             <main>
+                <UpButton isVisible={isVisible} setIsVisible={setIsVisible}/>
                 <h3 className='to-center'>Модальное Окно</h3>
                 <button className='open-modal_btn' onClick={() => {
                     setModalActive(true)

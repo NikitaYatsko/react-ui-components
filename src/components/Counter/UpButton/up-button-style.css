@@ -1,0 +1,24 @@
+.up-button {
+    border-radius: 10px;
+    padding-top: 0;
+    cursor: pointer;
+    right: 20px;
+    bottom: 20px;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid black;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s;
+}
+
+.is-visible {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.up-button:hover {
+    padding-top: 10px;
+}
