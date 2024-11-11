@@ -9,7 +9,8 @@
     border: none;
     color: white;
     cursor: pointer;
-    transition: .3s;
+    transition: .5s;
+
 
 }
 
@@ -17,9 +18,8 @@
     padding-right: 5px;
 }
 
-.side-button.hide {
+.side-button.reversed {
     margin-right: 300px;
     transform: rotateY(180deg);
-
 }
 

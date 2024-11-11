@@ -5,13 +5,13 @@ import ToggleButton from "./ToggleButton/ToggleButton";
 const SideMenu = ({sideMenuActive, setSideMenuActive}) => {
     useEffect(() => {
         if (sideMenuActive) {
-            document.body.classList.add("test");
+            document.body.classList.add("dark-bg");
 
         } else {
-            document.body.classList.remove("test");
+            document.body.classList.remove("dark-bg");
         }
 
-        return () => document.body.classList.remove("test");
+        return () => document.body.classList.remove("dark-bg");
     }, [sideMenuActive]);
 
     return (
