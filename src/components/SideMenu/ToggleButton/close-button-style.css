@@ -15,6 +15,7 @@
 .side-button:hover{
     padding-right:5px ;
 }
-.reversed{
-    transform: rotate(180deg);
+.side-button.hide{
+    opacity: 0;
+
 }

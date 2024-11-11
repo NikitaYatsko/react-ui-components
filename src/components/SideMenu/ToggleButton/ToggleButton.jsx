@@ -1,8 +1,8 @@
 import './close-button-style.css'
 
-const ToggleButton = ({openMenu}) => {
+const ToggleButton = ({openMenu,sideMenuActive}) => {
     return (
-        <button onClick={openMenu} className="side-button">
+        <button onClick={openMenu} className={sideMenuActive ? "side-button hide": "side-button"}>
             {'<'}
         </button>
     );

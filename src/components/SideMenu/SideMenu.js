@@ -20,8 +20,8 @@ const SideMenu = ({sideMenuActive, setSideMenuActive}) => {
             <p className="side-menu_text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit...
             </p>
-            <button>закрыть</button>
-            <ToggleButton openMenu={() => setSideMenuActive(true)}/>
+            <button onClick={() => setSideMenuActive(false)}>закрыть</button>
+            <ToggleButton sideMenuActive={sideMenuActive} openMenu={() => setSideMenuActive(true)}/>
 
         </div>
     );

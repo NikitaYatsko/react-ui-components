@@ -8,6 +8,7 @@ import FormComponent from "./components/Form/FormComponent";
 import Slider from "./components/Slider/Slider";
 import UpButton from "./components/UpButton/UpButton";
 import SideMenu from "./components/SideMenu/SideMenu"
+import ToggleButton from "./components/SideMenu/ToggleButton/ToggleButton";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <main>
                 <UpButton isVisible={isVisible} setIsVisible={setIsVisible}/>
                 <SideMenu sideMenuActive={sideMenuActive} setSideMenuActive={toggleSideMenu}/>
+
 
                 <h3 className='to-center'>Модальное Окно</h3>
                 <button className='open-modal_btn' onClick={() => {
