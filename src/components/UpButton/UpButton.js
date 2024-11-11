@@ -1,7 +1,7 @@
 import {useEffect} from 'react';
 import './up-button-style.css';
 
-export default function UpButton({isVisible, setIsVisible}) {
+const UpButton = ({isVisible, setIsVisible})=>{
     useEffect(() => {
         const handleScroll = () => {
             window.scrollY > 300 ? setIsVisible(true) : setIsVisible(false);
@@ -22,3 +22,4 @@ export default function UpButton({isVisible, setIsVisible}) {
         </button>
     );
 }
+export default UpButton;

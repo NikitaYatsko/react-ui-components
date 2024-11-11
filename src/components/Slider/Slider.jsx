@@ -7,7 +7,7 @@ const images = [
     'https://via.placeholder.com/600x400?text=Slide+3',
 ];
 
-export default function Slider() {
+const Slider = () =>{
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const nextSlide = () => {
@@ -41,5 +41,7 @@ export default function Slider() {
         </div>
     );
 };
+
+export default Slider;
 
 

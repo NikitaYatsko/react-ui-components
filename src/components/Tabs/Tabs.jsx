@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import './tabs-style.css';
 
-export default function Tabs({ children }) {
+const Tabs = ({children}) => {
     const [activeTab, setActiveTab] = useState(0);
 
     function handleTabClick(index) {
@@ -27,3 +27,4 @@ export default function Tabs({ children }) {
         </div>
     );
 }
+export default Tabs;

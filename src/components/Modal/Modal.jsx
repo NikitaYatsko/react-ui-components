@@ -1,6 +1,6 @@
 import './modal-style.css'
 
-export default function Modal({active, setActive, children}) {
+const Modal = ({active, setActive, children}) => {
     active ? document.body.style.overflowY = 'hidden' : document.body.style.overflowY = 'auto';
     return (
         <div className={active ? 'modal active' : 'modal'} onClick={() => setActive(false)}>
@@ -10,3 +10,4 @@ export default function Modal({active, setActive, children}) {
         </div>
     );
 }
+export default Modal;

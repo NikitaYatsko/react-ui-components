@@ -1,6 +1,6 @@
 import './counter-style.css'
 
-export default function Counter({count, setCount}) {
+const Counter = ({count, setCount}) => {
     return (
         <div className='counter-wrapper'>
             <div className="to-display-column">
@@ -13,3 +13,4 @@ export default function Counter({count, setCount}) {
 
     )
 }
+export default Counter;

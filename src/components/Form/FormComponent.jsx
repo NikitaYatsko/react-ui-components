@@ -1,7 +1,7 @@
 import './form-component_style.css'
 import {useState} from "react";
 
-export default function FormComponent() {
+const FormComponent = () => {
 
     const [form, setForm] = useState({
         email: '',
@@ -74,3 +74,4 @@ export default function FormComponent() {
         </form>
     );
 }
+export default FormComponent;
