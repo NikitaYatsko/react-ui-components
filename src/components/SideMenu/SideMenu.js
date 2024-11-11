@@ -5,13 +5,13 @@ import ToggleButton from "./ToggleButton/ToggleButton";
 const SideMenu = ({sideMenuActive, setSideMenuActive}) => {
     useEffect(() => {
         if (sideMenuActive) {
-            document.body.classList.add("darken-background");
+            document.body.classList.add("test");
 
         } else {
-            document.body.classList.remove("darken-background");
+            document.body.classList.remove("test");
         }
 
-        return () => document.body.classList.remove("darken-background");
+        return () => document.body.classList.remove("test");
     }, [sideMenuActive]);
 
     return (
@@ -20,7 +20,6 @@ const SideMenu = ({sideMenuActive, setSideMenuActive}) => {
             <p className="side-menu_text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit...
             </p>
-            <button onClick={() => setSideMenuActive(false)}>закрыть</button>
             <ToggleButton sideMenuActive={sideMenuActive} openMenu={() => setSideMenuActive(true)}/>
 
         </div>

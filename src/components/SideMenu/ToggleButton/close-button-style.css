@@ -1,21 +1,25 @@
 .side-button {
     border-radius: 10px;
     position: fixed;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background: black;
-    top: 50%;
-    transform: translateY(-50%);
     right: 20px;
+    bottom: 20px;
     border: none;
     color: white;
     cursor: pointer;
     transition: .3s;
-}
-.side-button:hover{
-    padding-right:5px ;
-}
-.side-button.hide{
-    opacity: 0;
 
 }
+
+.side-button:hover {
+    padding-right: 5px;
+}
+
+.side-button.hide {
+    margin-right: 300px;
+    transform: rotateY(180deg);
+
+}
+

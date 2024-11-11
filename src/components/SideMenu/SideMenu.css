@@ -21,3 +21,8 @@
     background: rgba(0,0,0,.1);
     transition: .3s;
 }
+
+.test{
+    margin-right: 300px;
+    transition: margin-right .3s;
+}
