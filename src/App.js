@@ -6,54 +6,28 @@ import Tabs from "./components/Tabs/Tabs";
 import Tabitem from "./components/Tabs/TabItem/Tabitem";
 import FormComponent from "./components/Form/FormComponent";
 import Slider from "./components/Slider/Slider";
-import UpButton from "./components/Counter/UpButton/UpButton";
+import UpButton from "./components/UpButton/UpButton";
+import SideMenu from "./components/SideMenu/SideMenu"
+
 
 function App() {
     const [modalActive, setModalActive] = useState(false)
     const [count, setCount] = useState(0);
-    const [isVisible,setIsVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState(false);
+    const [sideMenuActive, setSideMenuActive] = useState(false)
+    const toggleSideMenu = () => setSideMenuActive((prev) => !prev);
 
     return (
         <div className='app'>
             <main>
                 <UpButton isVisible={isVisible} setIsVisible={setIsVisible}/>
+                <SideMenu sideMenuActive={sideMenuActive} setSideMenuActive={toggleSideMenu}/>
+
                 <h3 className='to-center'>Модальное Окно</h3>
                 <button className='open-modal_btn' onClick={() => {
                     setModalActive(true)
                 }}>Открыть модальное окно
                 </button>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolores nisi reprehenderit?
-                    Distinctio eius explicabo ipsam libero, nostrum quos? A alias aliquam commodi culpa cum deleniti,
-                    dignissimos est et exercitationem fuga illum iste iure laborum libero nemo nesciunt nisi non odio
-                    officiis optio porro possimus provident quaerat quam quia quisquam sint, temporibus tenetur unde
-                    veritatis? Amet, asperiores cumque dicta dolores error eveniet, fugit illum magnam maiores molestias
-                    mollitia officiis omnis perferendis perspiciatis placeat quaerat qui quibusdam quod rerum, soluta
-                    temporibus ullam vel voluptatem voluptatibus voluptatum! Consequatur dolorem eveniet illo optio
-                    porro quod reiciendis, rerum tenetur. Magnam provident reiciendis rerum ullam?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolores nisi reprehenderit?
-                    Distinctio eius explicabo ipsam libero, nostrum quos? A alias aliquam commodi culpa cum deleniti,
-                    dignissimos est et exercitationem fuga illum iste iure laborum libero nemo nesciunt nisi non odio
-                    officiis optio porro possimus provident quaerat quam quia quisquam sint, temporibus tenetur unde
-                    veritatis? Amet, asperiores cumque dicta dolores error eveniet, fugit illum magnam maiores molestias
-                    mollitia officiis omnis perferendis perspiciatis placeat quaerat qui quibusdam quod rerum, soluta
-                    temporibus ullam vel voluptatem voluptatibus voluptatum! Consequatur dolorem eveniet illo optio
-                    porro quod reiciendis, rerum tenetur. Magnam provident reiciendis rerum ullam?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolores nisi reprehenderit?
-                    Distinctio eius explicabo ipsam libero, nostrum quos? A alias aliquam commodi culpa cum deleniti,
-                    dignissimos est et exercitationem fuga illum iste iure laborum libero nemo nesciunt nisi non odio
-                    officiis optio porro possimus provident quaerat quam quia quisquam sint, temporibus tenetur unde
-                    veritatis? Amet, asperiores cumque dicta dolores error eveniet, fugit illum magnam maiores molestias
-                    mollitia officiis omnis perferendis perspiciatis placeat quaerat qui quibusdam quod rerum, soluta
-                    temporibus ullam vel voluptatem voluptatibus voluptatum! Consequatur dolorem eveniet illo optio
-                    porro quod reiciendis, rerum tenetur. Magnam provident reiciendis rerum ullam?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolores nisi reprehenderit?
-                    Distinctio eius explicabo ipsam libero, nostrum quos? A alias aliquam commodi culpa cum deleniti,
-                    dignissimos est et exercitationem fuga illum iste iure laborum libero nemo nesciunt nisi non odio
-                    officiis optio porro possimus provident quaerat quam quia quisquam sint, temporibus tenetur unde
-                    veritatis? Amet, asperiores cumque dicta dolores error eveniet, fugit illum magnam maiores molestias
-                    mollitia officiis omnis perferendis perspiciatis placeat quaerat qui quibusdam quod rerum, soluta
-                    temporibus ullam vel voluptatem voluptatibus voluptatum! Consequatur dolorem eveniet illo optio
-                    porro quod reiciendis, rerum tenetur. Magnam provident reiciendis rerum ullam?</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolores nisi reprehenderit?
                     Distinctio eius explicabo ipsam libero, nostrum quos? A alias aliquam commodi culpa cum deleniti,
                     dignissimos est et exercitationem fuga illum iste iure laborum libero nemo nesciunt nisi non odio

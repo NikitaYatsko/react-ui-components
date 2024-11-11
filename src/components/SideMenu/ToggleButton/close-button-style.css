@@ -1,0 +1,20 @@
+.side-button {
+    border-radius: 10px;
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background: black;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+.side-button:hover{
+    padding-right:5px ;
+}
+.reversed{
+    transform: rotate(180deg);
+}

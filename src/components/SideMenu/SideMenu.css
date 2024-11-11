@@ -1,0 +1,23 @@
+.side-menu {
+    z-index: 1000;
+    padding: 20px 20px;
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    background: white;
+    border: 1px solid black;
+    right: -300px;
+    transition: .3s;
+
+}
+.side-menu_text{
+    margin-top: 20px;
+}
+.side-menu_open{
+    right: 0;
+}
+
+.darken-background{
+    background: rgba(0,0,0,.1);
+    transition: .3s;
+}
